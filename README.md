@@ -29,12 +29,12 @@ dir_path = dir_path+"/"
 // List all files in the directory:
 list = getFileList(dir_path);
 
-// Process each .czi file:
+// Process each .tif file:
 for (i=0; i<list.length; i++) {
-    if (endsWith(list[i], ".czi")) {
+    if (endsWith(list[i], ".tif")) {
         // Get prefix from file name:
-        prefix = replace(list[i], ".czi", "");
-        suffix = ".czi";
+        prefix = replace(list[i], ".tif", "");
+        suffix = ".tif";
         file_name = prefix + suffix;
         full_path = dir_path + file_name;
 
